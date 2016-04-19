@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Expense Management</title>
+    <meta name="description" content="acme expense management app">
+    <meta name="author" content="corbett">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="assets/skeleton/css/normalize.css">
+    <link rel="stylesheet" href="assets/skeleton/css/skeleton.css">
+    <link rel="stylesheet" href="styles/css/custom.css">
+
+    <link rel="icon" type="image/png" href="assets/skeleton/images/favicon.png">
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="twelve columns">
+            <h4 class="logo-text">ACME Expense Management</h4>
+        </div>
+    </div>
+    <form>
+        <div class="row">
+            <div class="four columns">
+                <label for="expenseReportId">Expense Report</label>
+                <input readonly class="u-full-width" type="email" placeholder="12909242498913" id="expenseReportId">
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label for="merchant">Merchant</label>
+                <input class="u-full-width" type="text" placeholder="Merchant" id="merchant" value="Starbucks">
+            </div>
+            <div class="eight columns">
+                <label for="expenseCategory">Expense Category</label>
+                <select class="u-full-width" id="expenseCategory">
+                    <option value="meals">Meals</option>
+                    <option value="lodging">Lodging</option>
+                    <option value="entertainment">Entertainment</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns">
+                <label for="merchant">Expense Date</label>
+                <input class="u-full-width" type="text" value="02/02/2016" id="expenseDate">
+            </div>
+            <div class="eight columns">
+                <label for="expenseDescription">Description</label>
+                <input class="u-full-width" type="text" id="expenseDescription" value="Best Groundhogs Day Ever!">
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns u-pull-right">
+                <label for="expenseAmount">Amount</label>
+                <input class="u-pull-right u-full-width" type="text" id="expenseAmount" value="$2.93">
+            </div>
+        </div>
+        <div class="row">
+            <div class="four columns u-pull-right">
+                <input class="button-primary u-full-width" type="submit" id="addButton" value="Add Expense">
+            </div>
+        </div>
+    </form>
+    <div class="row">
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Merchant</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th class="td-right">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Starbucks</td>
+                    <td>Meals</td>
+                    <td>02/02/2016</td>
+                    <td>Morning Coffee</td>
+                    <td class="td-right">$2.56</td>
+                </tr>
+                <tr>
+                    <td>Kincaids</td>
+                    <td>Meals</td>
+                    <td>02/02/2016</td>
+                    <td>Mid-Morning Snack</td>
+                    <td class="td-right">$15.53</td>
+                </tr>
+                <tr>
+                    <td>Mama's Dinner</td>
+                    <td>Meals</td>
+                    <td>02/02/2016</td>
+                    <td>Official Lunch</td>
+                    <td class="td-right">$13.89</td>
+                </tr>
+                <tr>
+                    <td>Bob's Chophouse</td>
+                    <td>Meals</td>
+                    <td>02/02/2016</td>
+                    <td>Dinner</td>
+                    <td class="td-right">$256.23</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
